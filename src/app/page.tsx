@@ -10,7 +10,7 @@ export default function Home() {
       <SiteNavbar />
       {/* <ContentArea /> */}
       <Testimonials />
-      <div className="flex flex-wrap gap-4 items-center p-8">
+      {/* <div className="flex flex-wrap gap-4 items-center p-8">
         <Button
           className=""
           color="default"
@@ -22,7 +22,7 @@ export default function Home() {
         <Button color="success">Success</Button>
         <Button color="warning">Warning</Button>
         <Button color="danger">Danger</Button>
-      </div>
+      </div> */}
     </>
   )
 }

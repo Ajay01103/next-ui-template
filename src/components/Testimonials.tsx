@@ -4,6 +4,8 @@ import CTA from "./CTA"
 import CTA1 from "./CTA1"
 import Features from "./Features"
 import Reviews from "./Reviews"
+import Footer from "./Footer"
+import CTA2 from "./CTA2"
 
 const Testimonials = () => {
   const divStyle = {
@@ -416,8 +418,9 @@ const Testimonials = () => {
         <div />
         <div />
         <div />
+        <CTA2 />
         <div>
-          <div className="mt-24 pt-12 pb-12 mb-24 w-[95%] md:w-4/5 mx-auto">
+          {/* <div className="mt-24 pt-12 pb-12 mb-24 w-[95%] md:w-4/5 mx-auto">
             <div className="rounded-2xl pt-20 pb-24 flex justify-center align-center shadow-lg undefined bg-[#302DCA]">
               <div className="text-center text-white w-[80%] md:w-[60%] md:w-3/5 m-auto ">
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold Inter">
@@ -443,63 +446,10 @@ const Testimonials = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div>
-          <div className="">
-            <footer className="bg-[#070127] text-[#C8C8C8] text-gray-200 mx-auto inter">
-              <div className="px-5 py-24 container   px-24 mx-auto">
-                <div className=" md:flex md:flex-row w-full">
-                  <div className="">
-                    <div className=" md:w-1/2 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
-                      <a className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-                        <img
-                          className="w-3/5"
-                          src="/static/media/InvCalendarPlanLogo.62d642764f7fd71b92de.png"
-                        />
-                      </a>
-                    </div>
-                  </div>
-                  <div className="ml-auto pt-8 md:pt-0 text-sm px-4 flex flex-col space-y-8 text-white">
-                    <div className="w-full">
-                      <nav
-                        className="list-none flex flex-col text-center md:flex-row flex-wrap 
- uppercase space-y-6 md:space-y-0 lg:space-x-8"
-                      >
-                        <li>
-                          <a className="hover:text-gray-500 cursor-pointer Inter">Home</a>
-                        </li>
-                        <li>
-                          <a className="hover:text-gray-500 cursor-pointer Inter">Pricing</a>
-                        </li>
-                        <li>
-                          <a className="hover:text-gray-500 cursor-pointer Inter">FAQ</a>
-                        </li>
-                        <li>
-                          <a className="hover:text-gray-500 cursor-pointer Inter">Testimonials</a>
-                        </li>
-                      </nav>
-                    </div>
-                  </div>
-                </div>
-                <div className="md:flex md:flex-row text-center md:text-left w-full mt-6 pt-8 ">
-                  <p className="text-base text-[#C8C8C8] w-2/5 leading-loose inline Inter">
-                    Lorem ipsum dolor sit amet consectetur. Quisque vestibulum at aliquam
-                    scelerisque.
-                  </p>
-                  <div className="md:ml-auto md:text-right pt-8 md:pt-0 text-[#C8C8C8] flex flex-col space-y-3">
-                    <span className="undefined Inter">contact@calendarplan.com</span>
-                    <span className="undefined Inter">More contact options</span>
-                  </div>
-                </div>
-              </div>
-            </footer>
-            <div className="bg-[#1C1639]">
-              <div className="flex mx-auto container justify-center py-6 text-center  text-[#C8C8C8]">
-                <span className="font-normal Inter">© 2023 CalendarPlan. All rights reserved.</span>
-              </div>
-            </div>
-          </div>
+          <Footer />
         </div>
       </div>
     </div>

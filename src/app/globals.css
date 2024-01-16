@@ -2,3 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .custom-gradient {
+    background-color: rgb(75, 85, 99);
+    background-image: radial-gradient(at 78% 100%, rgb(3, 105, 161) 0, transparent 27%),
+      radial-gradient(at 13% 28%, rgb(8, 145, 178) 0, transparent 41%),
+      radial-gradient(at 95% 4%, rgb(254, 205, 211) 0, transparent 65%),
+      radial-gradient(at 19% 81%, rgb(88, 28, 135) 0, transparent 44%),
+      radial-gradient(at 60% 46%, rgb(126, 34, 206) 0, transparent 100%),
+      radial-gradient(at 66% 16%, rgb(157, 23, 77) 0, transparent 34%);
+  }
+}
