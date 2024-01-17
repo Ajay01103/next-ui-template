@@ -1,3 +1,4 @@
+import { Divider } from "@nextui-org/react"
 import { AcmeLogo } from "./subcomponents/AcmeLogo"
 
 export default () => {
@@ -68,7 +69,7 @@ export default () => {
   ]
 
   return (
-    <footer className="text-gray-500 bg-[#F3F5F9] px-4 py-5 w-full mx-auto md:px-8">
+    <footer className="text-gray-600 bg-[#F3F5F9] px-4 py-5 w-full mx-auto md:px-8">
       <div className="gap-6 mx-8 justify-between md:flex">
         <div className="flex-1">
           <div className="max-w-xs">
@@ -112,7 +113,8 @@ export default () => {
           ))}
         </div>
       </div>
-      <div className="mt-8 mx-8 py-6 border-t items-center justify-between sm:flex">
+      <Divider className="my-8" />
+      <div className="mt-8 mx-8 py-6 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">&copy; 2024 Calendar All rights reserved.</div>
         <div className="mt-6 sm:mt-0">
           <ul className="flex items-center space-x-4">
