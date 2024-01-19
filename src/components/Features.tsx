@@ -131,7 +131,7 @@ const Features = () => {
   return (
     <section className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
-        <div className="max-w-xl space-y-3">
+        <div className="max-w-xl space-y-6">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Simple solutions for complex issues
           </h3>
@@ -140,8 +140,9 @@ const Features = () => {
             molestie varius, enim ex faucibus purus
           </p>
         </div>
+
         <div className="mt-12">
-          <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
+          <ul className="grid gap-y-10 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
               <li
                 key={idx}
