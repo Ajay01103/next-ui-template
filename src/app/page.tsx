@@ -1,28 +1,29 @@
 "use client"
 
+import CTA from "@/components/CTA"
+import CTA1 from "@/components/CTA1"
+import CTA2 from "@/components/CTA2"
+import Features from "@/components/Features"
+import Footer from "@/components/Footer"
+import Hero from "@/components/Hero"
+import LogoGrids from "@/components/LogoGrid"
 import SiteNavbar from "@/components/Navbar"
+import Reviews from "@/components/Reviews"
 import Testimonials from "@/components/Testimonials"
-import { Button } from "@nextui-org/react"
 
 export default function Home() {
   return (
     <>
       <SiteNavbar />
-      {/* <ContentArea /> */}
+      <Hero />
+      <LogoGrids />
+      <CTA />
+      <CTA1 />
+      <Features />
+      <Reviews />
       <Testimonials />
-      {/* <div className="flex flex-wrap gap-4 items-center p-8">
-        <Button
-          className=""
-          color="default"
-        >
-          Default
-        </Button>
-        <Button color="primary">Primary</Button>
-        <Button color="secondary">Secondary</Button>
-        <Button color="success">Success</Button>
-        <Button color="warning">Warning</Button>
-        <Button color="danger">Danger</Button>
-      </div> */}
+      <CTA2 />
+      <Footer />
     </>
   )
 }

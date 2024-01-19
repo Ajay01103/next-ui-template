@@ -1,8 +1,3 @@
-import React from "react"
-import LogoGrids from "./LogoGrid"
-import CTA from "./CTA"
-import CTA1 from "./CTA1"
-import Features from "./Features"
 import Reviews from "./Reviews"
 import Footer from "./Footer"
 import CTA2 from "./CTA2"
@@ -20,57 +15,7 @@ const Testimonials = () => {
 
   return (
     <div>
-      <div
-        className=""
-        style={{
-          padding: "0px",
-        }}
-      >
-        <div>
-          <div
-            className="undefined"
-            style={divStyle}
-          >
-            <div className="dark:text-zinc-100 mx-auto w-7/8 ">
-              <div className="w-7/8 mx-auto relative h-4/5 z-30 pt-6 inter  ">
-                <div className=" text-center pt-8 md:pt-12 md:mt-12 mx-auto w-4/5 md:w-3/5">
-                  <h1 className="text-[#030647]  font-semibold text-5xl md:text-7xl dark:text-gray-200 Inter">
-                    {" "}
-                    The All-In-One Calendar App for SaaS Founders{" "}
-                  </h1>
-                  <p className="text-lg text-[#515568] pt-2 mt-4 text-center w-4/5  mx-auto dark:text-gray-100/70 Inter">
-                    Streamline your workflow with the all-in-one calendar and organization app for
-                    founders. Get started with a free trial today, no credit card needed.{""}
-                  </p>
-                  <div className="flex flex-row mx-auto justify-center pt-6 mt-4">
-                    <button
-                      className="text-white bg-[#302DCA] hover:drop-shadow-lg focus:ring-4 text-lg focus:ring-blue-300 font-semibold rounded-2xl text-sm px-12 py-4 mr-2 mb-2 dark:bg-purple-600  dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-blue-800"
-                      type="button"
-                    >
-                      Get Started
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div className="rounded-2xl md:h-[600px] relative mt-8 pt-4">
-                <img
-                  className="rounded-2xl w-4/5 mx-auto z-20 pb-12"
-                  src="https://res.cloudinary.com/dnzjbmzag/image/upload/v1694679379/CalendarPlanDashboard.png"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <LogoGrids />
-
-        <CTA />
-
-        <CTA1 />
-
-        <Features />
-
-        <Reviews />
-
+      <div>
         <div>
           <section className="mb-24 w-4/5 md:w-1/2 mx-auto">
             <div className="bg-white">
@@ -85,10 +30,7 @@ const Testimonials = () => {
                     className="bg-white shadow rounded-xl px-4 py-4 mb-1 faqBoxShadow"
                     open
                   >
-                    <summary
-                      className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 
- cursor-pointer"
-                    >
+                    <summary className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 cursor-pointer">
                       How do I get started?
                     </summary>
                     <div>
@@ -99,10 +41,7 @@ const Testimonials = () => {
                     </div>
                   </details>
                   <details className="bg-white shadow rounded-xl px-4 py-4 mb-1 faqBoxShadow">
-                    <summary
-                      className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 
- cursor-pointer"
-                    >
+                    <summary className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 cursor-pointer">
                       Do you offer discounts?
                     </summary>
                     <div>
@@ -113,10 +52,7 @@ const Testimonials = () => {
                     </div>
                   </details>
                   <details className="bg-white shadow rounded-xl px-4 py-4 mb-1 faqBoxShadow">
-                    <summary
-                      className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 
- cursor-pointer"
-                    >
+                    <summary className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 cursor-pointer">
                       What are the pricing plans?
                     </summary>
                     <div>
@@ -127,10 +63,7 @@ const Testimonials = () => {
                     </div>
                   </details>
                   <details className="bg-white shadow rounded-xl px-4 py-4 mb-1 faqBoxShadow">
-                    <summary
-                      className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 
- cursor-pointer"
-                    >
+                    <summary className="font-bold text-[#030647] rounded-lg py-3 px-4 text-lg dark:text-gray-200 cursor-pointer">
                       How do I get started?
                     </summary>
                     <div>
@@ -232,9 +165,7 @@ const Testimonials = () => {
                     </li>
                   </ul>
                   <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none
- bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg
- focus:ring-blue-300"
+                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
                     type="button"
                   >
                     Buy Now
@@ -316,9 +247,7 @@ const Testimonials = () => {
                     </li>
                   </ul>
                   <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none
- bg-white text-[#302DCA] focus:ring-4 text-base md:text-lg
- focus:ring-gray-300 "
+                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-white text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-gray-300 "
                     type="button"
                   >
                     Buy Now
@@ -402,9 +331,7 @@ const Testimonials = () => {
                     </li>
                   </ul>
                   <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none
- bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg
- focus:ring-blue-300"
+                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
                     type="button"
                   >
                     Buy Now
@@ -413,14 +340,6 @@ const Testimonials = () => {
               </div>
             </div>
           </section>
-        </div>
-        <div />
-        <div />
-        <div />
-        <div />
-        <CTA2 />
-        <div>
-          <Footer />
         </div>
       </div>
     </div>
