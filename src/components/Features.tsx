@@ -129,19 +129,19 @@ const Features = () => {
   ]
 
   return (
-    <section className="py-14">
+    <section className="py-14 md:py-24">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="max-w-xl space-y-6">
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Simple solutions for complex issues
           </h3>
-          <p>
+          <p className="text-gray-600 leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec congue, nisl eget
             molestie varius, enim ex faucibus purus
           </p>
         </div>
 
-        <div className="mt-12">
+        <div className="md:mt-20 mt-12">
           <ul className="grid gap-y-10 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
             {features.map((item, idx) => (
               <li

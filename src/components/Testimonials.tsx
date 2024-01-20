@@ -1,6 +1,4 @@
-import Reviews from "./Reviews"
-import Footer from "./Footer"
-import CTA2 from "./CTA2"
+import { Button, Card, CardBody, CardFooter, CardHeader, Link } from "@nextui-org/react"
 
 const Testimonials = () => {
   const divStyle = {
@@ -90,254 +88,293 @@ const Testimonials = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-8 -mx-4">
-              <div className="flex w-full mb-8 sm:px-4 lg:mb-0 border  rounded-3xl bg-white">
+              <Card className="flex w-full mb-8 sm:px-4 lg:mb-0 border  rounded-3xl bg-white">
                 <div className="flex flex-col w-full p-6 space-y-8  sm:p-8 ">
-                  <div className="space-y-1 ">
-                    <h4 className="text-2xl md:text-3xl font-semibold pt-4  Inter">Basic Plan</h4>
-                    <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
-                      For Small team needs
-                    </p>
-                    <span className="text-4xl font-semibold text-[#030647] pt-4 mt-4 Inter">
-                      $10
-                    </span>
-                    <span className="text-xl tracking-wide text-[#9DA1B5] Inter">/mo</span>
-                  </div>
-                  <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">10 GB Disk Space</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">1 Year Support</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">500 Queries</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">Free Custom Domain</span>
-                    </li>
-                  </ul>
-                  <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
-                    type="button"
-                  >
-                    Buy Now
-                  </button>
+                  <CardHeader className="space-y-1 flex-col">
+                    <div className="flex-col">
+                      <h4 className="text-2xl md:text-3xl font-semibold pt-4  Inter">
+                        Starter Plan
+                      </h4>
+                      <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
+                        For Small team needs
+                      </p>
+                    </div>
+                    <div className="flex-col">
+                      <span className="text-4xl font-semibold text-[#030647] pt-4 mt-4 Inter">
+                        $10
+                      </span>
+                      <span className="text-xl tracking-wide text-[#9DA1B5] Inter">/mo</span>
+                    </div>
+                  </CardHeader>
+
+                  <CardBody>
+                    <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">10 GB Disk Space</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">1 Year Support</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">500 Queries</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">Free Custom Domain</span>
+                      </li>
+                    </ul>
+                  </CardBody>
+
+                  <CardFooter>
+                    <Button
+                      variant="flat"
+                      as={Link}
+                      size="lg"
+                      color="primary"
+                      className="w-full shadow-none px-5 py-8 font-semibold text-center justify-center rounded-full hover:shadow-none text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
+                    >
+                      Buy Now
+                    </Button>
+                  </CardFooter>
                 </div>
-              </div>
-              <div className="flex w-full mb-8 sm:px-4 lg:mb-0 border rounded-3xl bg-[#302DCA] text-white">
-                <div className="flex flex-col w-full p-6 space-y-8  sm:p-8  ">
-                  <div className="space-y-1 ">
-                    <h4 className="text-2xl md:text-3xl font-semibold pt-4  Inter">
-                      Business Plan
-                    </h4>
-                    <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
-                      For Small team needs
-                    </p>
-                    <span className="text-4xl font-semibold pt-4 mt-4 Inter">$20</span>
-                    <span className="text-xl tracking-wide text-[#A7A6DB] Inter">/mo</span>
-                  </div>
-                  <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-400"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="undefined Inter">10 GB Disk Space</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-400"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="undefined Inter">1 Year Support</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-400"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="undefined Inter">500 Queries</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-400"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="undefined Inter">Free Custom Domain</span>
-                    </li>
-                  </ul>
-                  <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-white text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-gray-300 "
-                    type="button"
-                  >
-                    Buy Now
-                  </button>
+              </Card>
+              <Card className="flex w-full mb-8 sm:px-4 lg:mb-0 border rounded-3xl">
+                <div className="flex flex-col w-full p-6 space-y-8 sm:p-8  ">
+                  <CardHeader className="space-y-1 flex-col">
+                    <div className="flex-col">
+                      <h4 className="text-2xl md:text-3xl font-semibold pt-4 Inter">
+                        Business Plan
+                      </h4>
+                      <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
+                        For Small team needs
+                      </p>
+                    </div>
+                    <div className="flex-col gap-2">
+                      <span className="text-4xl font-semibold pt-4 mt-4 Inter">$20</span>
+                      <span className="text-xl tracking-wide text-[#A7A6DB] Inter">/mo</span>
+                    </div>
+                  </CardHeader>
+
+                  <CardBody>
+                    <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">10 GB Disk Space</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">1 Year Support</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">500 Queries</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">Free Custom Domain</span>
+                      </li>
+                    </ul>
+                  </CardBody>
+                  <CardFooter>
+                    <Button
+                      as={Link}
+                      color="primary"
+                      variant="flat"
+                      className="w-full shadow-none px-5 py-8 font-semibold  text-center rounded-full hover:shadow-none text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-gray-300 "
+                    >
+                      Buy Now
+                    </Button>
+                  </CardFooter>
                 </div>
-              </div>
-              <div className="flex w-full mb-8 sm:px-4 lg:mb-0 border  rounded-3xl bg-white">
-                <div className="flex flex-col w-full p-6 space-y-8  sm:p-8 ">
-                  <div className="space-y-1 ">
-                    <h4 className="text-2xl md:text-3xl font-semibold pt-4  Inter">
-                      Enterprise Plan
-                    </h4>
-                    <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
-                      For Small team needs
-                    </p>
-                    <span className="text-4xl font-semibold text-[#030647] pt-4 mt-4 Inter">
-                      $40
-                    </span>
-                    <span className="text-xl tracking-wide text-[#9DA1B5] Inter">/mo</span>
-                  </div>
-                  <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">10 GB Disk Space</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">1 Year Support</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">500 Queries</span>
-                    </li>
-                    <li className="flex mb-2 space-x-2 align-center items-center">
-                      <svg
-                        className="flex-shrink-0 w-6 h-6 text-indigo-600"
-                        fill="currentColor"
-                        viewBox="0 0 20 20"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          clipRule="evenodd"
-                          d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                          fillRule="evenodd"
-                        />
-                      </svg>
-                      <span className="text-[#515568] Inter">Free Custom Domain</span>
-                    </li>
-                  </ul>
-                  <button
-                    className="w-full block shadow-none px-5 py-4 font-semibold  text-center rounded-full hover:shadow-none bg-[#EBEBFA] text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
-                    type="button"
-                  >
-                    Buy Now
-                  </button>
+              </Card>
+
+              <Card className="flex w-full mb-8 sm:px-4 lg:mb-0 border rounded-3xl bg-white">
+                <div className="flex flex-col w-full p-6 space-y-8 sm:p-8 ">
+                  <CardHeader className="space-y-1 flex-col">
+                    <div className="flex-col">
+                      <h4 className="text-2xl md:text-3xl font-semibold pt-4 Inter">
+                        Enterprise Plan
+                      </h4>
+                      <p className="mt-3 leading-relaxed text-[#A7A6DB] font-normal text-lg pb-6 Inter">
+                        For Small team needs
+                      </p>
+                    </div>
+                    <div className="flex-col">
+                      <span className="text-4xl font-semibold text-[#030647] pt-4 mt-4 Inter">
+                        $40
+                      </span>
+                      <span className="text-xl tracking-wide text-[#9DA1B5] Inter">/mo</span>
+                    </div>
+                  </CardHeader>
+
+                  <CardBody>
+                    <ul className="flex-1 mb-6 text-base md:text-lg space-y-4">
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">10 GB Disk Space</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">1 Year Support</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">500 Queries</span>
+                      </li>
+                      <li className="flex mb-2 space-x-2 align-center items-center">
+                        <svg
+                          className="flex-shrink-0 w-6 h-6 text-indigo-600"
+                          fill="currentColor"
+                          viewBox="0 0 20 20"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            clipRule="evenodd"
+                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                            fillRule="evenodd"
+                          />
+                        </svg>
+                        <span className="text-[#515568] Inter">Free Custom Domain</span>
+                      </li>
+                    </ul>
+                  </CardBody>
+
+                  <CardFooter>
+                    <Button
+                      as={Link}
+                      variant="flat"
+                      color="primary"
+                      className="w-full shadow-none px-5 py-8 font-semibold  text-center rounded-full hover:shadow-none text-[#302DCA] focus:ring-4 text-base md:text-lg focus:ring-blue-300"
+                    >
+                      Buy Now
+                    </Button>
+                  </CardFooter>
                 </div>
-              </div>
+              </Card>
             </div>
           </section>
         </div>

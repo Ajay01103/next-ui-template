@@ -6,7 +6,7 @@ const LogoGrids = () => {
           <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
             Trusted by Leading Brands
           </h3>
-          <p className="text-gray-600 mt-3">
+          <p className="text-gray-500 leading-relaxed mt-3">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim nibh nisl, vel
             egestas magna rhoncus at. Nunc elementum efficitur tortor in laoreet.
           </p>

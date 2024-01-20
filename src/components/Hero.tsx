@@ -1,3 +1,5 @@
+import { Button, Link } from "@nextui-org/react"
+
 const Hero = () => {
   const divStyle = {
     background:
@@ -23,12 +25,14 @@ const Hero = () => {
               founders. Get started with a free trial today, no credit card needed.{""}
             </p>
             <div className="flex flex-row mx-auto justify-center pt-6 mt-4">
-              <button
-                className="text-white bg-[#302DCA] hover:drop-shadow-lg focus:ring-4 text-lg focus:ring-blue-300 font-semibold rounded-2xl text-sm px-12 py-4 mr-2 mb-2 dark:bg-purple-600  dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-blue-800"
-                type="button"
+              <Button
+                color="primary"
+                variant="flat"
+                as={Link}
+                className="md:py-6 md:text-medium focus:ring-4 font-semibold rounded-2xl px-12 py-4 mb-2 dark:bg-purple-600  dark:hover:bg-purple-700 focus:outline-none dark:focus:ring-blue-800"
               >
                 Get Started
-              </button>
+              </Button>
             </div>
           </div>
         </div>

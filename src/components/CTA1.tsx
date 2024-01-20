@@ -3,7 +3,7 @@ import React from "react"
 const CTA1 = () => {
   return (
     <section>
-      <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-4 md:mt-20 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl text-gray-800 font-semibold md:text-4xl">
             Build your SaaS solution with help from our experts

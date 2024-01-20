@@ -1,3 +1,5 @@
+import { Image } from "@nextui-org/react"
+
 const CTA = () => {
   return (
     <section className="relative max-w-screen-xl mx-auto py-4 px-4 md:px-8 mt-4 md:mt-24">
@@ -33,7 +35,7 @@ const CTA = () => {
           </a>
         </div>
         <div className="flex-1 mt-5 mx-auto sm:w-9/12 lg:mt-0 lg:w-auto">
-          <img
+          <Image
             src="https://i.postimg.cc/kgd4WhyS/container.png"
             alt=""
             className="w-full"

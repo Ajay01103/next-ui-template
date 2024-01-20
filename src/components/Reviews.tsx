@@ -11,7 +11,7 @@ const Reviews = () => {
           </div>
           <div className="overflow-auto md:overflow-clip flex">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-6">
-              <div className="flex mr-4 min-w-0">
+              <div className="flex mr-4 min-w-0 antialiased">
                 <Card className="w-full flex flex-col bg-white p-6 rounded-2xl">
                   <CardHeader className="flex flex-row items-center">
                     <img
