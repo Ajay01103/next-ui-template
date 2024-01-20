@@ -174,7 +174,7 @@ export default function SiteNavbar() {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-        <NavbarItem isActive>
+        <NavbarItem>
           <Link
             href="#"
             aria-current="page"
